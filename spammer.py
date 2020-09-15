@@ -43,16 +43,8 @@ def main(t):
         phone = input(Style.BRIGHT+Fore.BLUE+"Введите номер телефона: "+Style.RESET_ALL)
         if phone == "":
             main(0)
-        if phone[0] == "+":
-            phone = phone[1:]
-        if phone[0] == "8":
-            phone = "7"+phone[1:]
-        if phone[0] == "9":
-            phone = phone
         if phone[0] == "9" and len(phone) == 12:
             locale = "RU"
-        elif phone[0] == "3" and phone[1] == "8" and phone[2] == "0" and len(phone) == 12:
-            locale = "UA"
         else:
             logo()
             print(Style.BRIGHT+Fore.RED+"[!] Неправильный номер."+Style.RESET_ALL)
@@ -690,7 +682,7 @@ def main(t):
         logo()
         update = input(Style.BRIGHT+Fore.BLUE+"Вы уверены, что хотите обновить? "+Style.RESET_ALL+"(y/n) ")
         if update == "y":
-            os.system("cd && rm -rf ~/spammer && git clone https://github.com/cludeex/spammer && python ~/spammer/install.py")
+            os.system("cd && rm -rf ~/spammer && git clone https://github.com/stdart/Spammer_Grab && python ~/spammer/install.py")
             exit()
         else:
             logo()
