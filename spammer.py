@@ -27,7 +27,7 @@ def mask(str, maska):
 def main(t):
     time.sleep(t)
     logo()
-    print("[1] СМС СПАМЕР.")
+    print("[1] СМС1 СПАМЕР.")
     print("[2] ОБНОВИТЬ СПАМЕР.")
     print("[3] ВЫХОД.\n")
     input1 = input(Style.BRIGHT+Fore.BLUE+"Введите номер пункта: "+Style.RESET_ALL)
