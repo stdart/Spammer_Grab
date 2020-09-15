@@ -48,8 +48,8 @@ def main(t):
         if phone[0] == "8":
             phone = "7"+phone[1:]
         if phone[0] == "9":
-            phone = "7"+phone
-        if phone[0] == "7" and len(phone) == 11:
+            phone = phone
+        if phone[0] == "9" and len(phone) == 12:
             locale = "RU"
         elif phone[0] == "3" and phone[1] == "8" and phone[2] == "0" and len(phone) == 12:
             locale = "UA"
